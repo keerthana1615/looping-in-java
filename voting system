@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int p1 = 0, p2 = 0, p3 = 0, p4 = 0;
+        int vote;
+        System.out.println("Enter vote (1-4). Enter -1 to stop.");
+        do {
+            vote = sc.nextInt();
+
+            switch (vote) {
+                case 1:
+                    p1++;
+                    break;
+                case 2:
+                    p2++;
+                    break;
+                case 3:
+                    p3++;
+                    break;
+                case 4:
+                    p4++;
+                    break;
+                case -1:
+                    break;
+                default:
+                    System.out.println("Invalid vote");
+            }
+
+        } while (vote != -1);
+
+        if (p1 >= p2 && p1 >= p3 && p1 >= p4)
+            System.out.println("Party 1 wins");
+        else if (p2 >= p1 && p2 >= p3 && p2 >= p4)
+            System.out.println("Party 2 wins");
+        else if (p3 >= p1 && p3 >= p2 && p3 >= p4)
+            System.out.println("Party 3 wins");
+        else
+            System.out.println("Party 4 wins");
+    }
+}
