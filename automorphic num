@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int n=s.nextInt();
+		int count=0;
+		int b=n*n;
+		   int rem = b%100;
+		   if(rem==n){
+		       System.out.println("automorphic num");
+		   }
+		   else{
+		       System.out.println("not an automorphic num");
+		   }
+	}
+}
