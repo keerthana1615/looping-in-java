@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int n=s.nextInt();
+		int sum=0;
+		int temp=n;
+		    int sq=n*n;
+		    int rev = 0;
+		    int revr = 0;
+		    while(n>0){
+		        int rem=n%10;
+		        rev=rev*10+rem;
+		        n/=10;
+		    }
+		    int sqrn=rev*rev;
+		    while(sqrn>0){
+		        int rem=sqrn%10;
+		        revr = revr*10+rem;
+		       sqrn/=10;
+		    }
+		    if(sq==revr){
+		        System.out.println("adam num");
+		    }
+		    else{
+		        System.out.println("not");
+		    }
+	}
+}
