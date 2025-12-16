@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s =new Scanner(System.in);
+		int a=s.nextInt();
+		int pro=1;
+		while(a>0){
+		    int rem=a%10;
+		    pro*=rem;
+		    a/=10;
+		}
+		System.out.println(pro);
+	}
+}
