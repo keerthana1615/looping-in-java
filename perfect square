@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int b=1;
+if(n<=0)
+System.out.println("not a perfect square");
+    for(int i=1;i*i<=n;i++){
+          b=i*i;
+          if(b==n){
+         System.out.println("perfect square");
+          }
+          
+    }
+    if(b!=n){
+                     System.out.println("not a perfect square"); 
+    }
+  }
+     
+}
