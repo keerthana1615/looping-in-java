@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String args[]) {
+        Scanner s = new Scanner(System.in);
+         int n=s.nextInt();
+         int b;
+         for(int i=1;i<=n;i++){
+             b=i*i*i;
+             System.out.println("cube value: "+b);
+         }
+    }
+}
